@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        select {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 16px;
+        }
+        
+        optgroup[label="USA"],
+        optgroup[label="Canada"] {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        option:not([disabled]) {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="countries">Select a country:</label><br>
+    <select id="countries">
+
+        <optgroup label="USA">
+            <option disabled selected hidden>Select a state</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+        </optgroup>
+
+        <optgroup label="Canada">
+            <option disabled selected hidden>Select a state</option>
+            <option value="AL">Alberta</option>
+            <option value="AK">British Colombia</option>
+            <option value="AZ">Manitoba</option>
+        </optgroup>
+    </select>
+</body>
+</html>

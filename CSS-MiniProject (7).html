@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.k213821.com/Task1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="radio"],
+        input[type="checkbox"],
+        input[type="submit"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="radio"]:focus,
+        input[type="checkbox"]:focus,
+        input[type="submit"]:focus,
+        input[type="button"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" placeholder="Enter text here">
+        
+        <label for="radioInput">Radio Input:</label>
+        <input type="radio" id="radioInput">
+        
+        <label for="checkboxInput">Checkbox Input:</label>
+        <input type="checkbox" id="checkboxInput">
+        <input type="button" value="Button"> 
+        <input type="button" value="Button">
+        <input type="button" value="Button">
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>

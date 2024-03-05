@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task3</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid hsl(133, 87%, 50%);
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #4c56ec;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>Courses Taught</h1>
+    <ol type="a">
+        <li>Web Programming</li>
+        <li>Discrete Structures</li>
+        <li>Electronic Commerce</li>
+        <li>Database Systems</li>
+        <li>Introduction to Computing</li>
+
+    </ol>
+<br>
+  <h1>Nested List Example</h1>
+
+  <ol type="I">
+      <li>Web Progrmming
+        <ul>
+            <li>Autumn 2014
+                <ol type="I">
+                    <li>September - January</li>
+                    <li>February - June</li>        
+                </ol>
+            </li>
+            <li>Spring 2015</li>
+          </ul>
+      </li>
+
+      <li>Discrete Structures
+        <ol type="i">
+            <li>Summer 2014</li>
+        </ol>    
+      </li>
+
+      <li>Electronic Commerce</li>
+      <li>Introduction to Computing</li>
+  </ol>
+
+  <h2>Complex Table Example</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Header 1</th>
+        <th colspan="2">Header 2</th>
+        <th rowspan="2">Header 3</th>
+      </tr>
+      <tr>
+        <th>Subheader 1</th>
+        <th>Subheader 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Col 1</td>
+        <td>Row 1, Col 2</td>
+        <td>Row 1, Col 3</td>
+        <td>Row 1, Col 4</td>
+      </tr>
+      <tr>
+        <td>Row 2, Col 1</td>
+        <td>Row 2, Col 2</td>
+        <td>Row 2, Col 3</td>
+        <td>Row 2, Col 4</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</body>
+</html>

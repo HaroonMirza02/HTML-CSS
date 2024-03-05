@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            font-weight: normal;
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            background-color: blueviolet;
+            font-size: 2.5em;
+            color: white;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: #1ad7f8;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .box:nth-child(3) {
+            grid-column: span 2;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1><center>Complex Flexbox example</center></h1>
+
+
+<div class="container">
+    <div class="box">
+        <h3>First Article</h3>
+        <p>Actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+        <p>Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.</p>
+    </div>
+    <div class="box">
+        <h3>Article 2</h3>
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+        <p>Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.</p>
+    </div>
+    <div class="box">
+        <div>
+            <button> <h3>Smile</h3></button>
+            <button><h3>Laugh</h3></button>
+            <button><h3>Wink</h3></button>
+            <button><h3>Shrug</h3></button>
+        </div>
+            <div>
+                <center><button><h3>Blush</h3></button></center>
+        
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+        <p>Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.</p>
+    </div>
+</div>
+</body>
+</html>

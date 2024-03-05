@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: aqua;
+}
+
+.contact-form{
+    box-sizing: border-box;
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+}
+.contact-info {
+    box-sizing: border-box;
+    color: #fff;
+    flex: 1;
+    padding: 2rem;
+    background-color: rgb(39, 0, 148);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 500px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #0300be;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3eadee;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+</style>
+<title>Task4</title>
+</head>
+
+<body>
+<header><h1>Connect With Us</h1></header>
+<p><strong>would love to respond to your response to your queries and help you succeed.<br>Feel free to get in touch with us.</strong> </p>
+<div class="contact-container">
+    <div class="contact-form">
+        <h2>Send your request</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="John Amenda" required>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" placeholder="+1 412 520 3231" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="johnamendagm@gmail.com" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Product Demo" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+        <input type="submit" value="SEND">
+    </div>
+
+    <div class="contact-info">
+        <p>Reach Us</p>
+        <p>Email: contactus@example.com</p>
+        <p>Phone: +1 012 345 6789 </p>
+        <p>Address: <blockquote>212, Ground floor, 7th cross,<br>Some layout, Some Road,<br>Koromangla, Bengaluru 560001</blockquote></p>
+    </div>
+</div>
+</body>
+</html>

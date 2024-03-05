@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task8</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #CCCCCC;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header, nav, article, aside, footer {
+        background-color: #FF69B4;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    nav {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 5px;
+    }
+
+    .go-button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        color: #0e080b;
+        cursor: pointer;
+    }
+
+    .container {
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        flex: 1; /* Allow the article to grow to fill the available space */
+    }
+
+    aside {
+        background-color: #FF69B4;
+        padding: 20px;
+        color: white;
+        flex: 1;
+    }
+
+    aside nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside nav a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Our Team</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="go-button">Go</button>
+        </div>
+    </nav>
+    <div style="display: flex;">
+        <article>
+            <div class="container">
+                <h2>Article Title</h2>
+                <p>Digital life is augmenting human capacities and disrupting eons-old human activities. Code-driven systems have spread to more than half of the world’s inhabitants in ambient information and connectivity, offering previously unimagined opportunities and unprecedented threats. As emerging algorithm-driven artificial intelligence (AI) continues to spread, will people be better off than they are today?</p>
+                <section><h2>Subsection</h2>
+                <p>Digital life is augmenting human capacities and disrupting eons-old human activities. Code-driven systems have spread to more than half of the world’s inhabitants in ambient information and connectivity, offering previously unimagined opportunities and unprecedented threats. As emerging algorithm-driven artificial intelligence (AI) continues to spread, will people be better off than they are today?
+                </p>
+                </section>
+                <section><h2> Another Subsection</h2>
+                    <p>Digital life is augmenting human capacities and disrupting eons-old human activities. Code-driven systems have spread to more than half of the world’s inhabitants in ambient information and connectivity, offering previously unimagined opportunities and unprecedented threats. As emerging algorithm-driven artificial intelligence (AI) continues to spread, will people be better off than they are today?
+                    </p>
+                    </section>
+            </div>
+        </article>
+        <aside>
+            <nav>
+                <h3>Related</h3>
+                <ul>
+                <li><a href="#">Discover more</a></li>
+                <li><a href="#">Where to go next</a></li>
+                <li><a href="#">Partners </a></li>
+                <li><a href="#">Stakeholders</a></li>
+            </ul>
+            </nav>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

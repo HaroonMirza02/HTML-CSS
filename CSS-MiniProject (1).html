@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task3</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1eb0dd;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .form-signup {
+        display: none;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    input[type="radio"] + label {
+        display: inline-block;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    input[type="radio"]:checked + label {
+        font-weight: bold;
+        color: #007bff;
+    }
+    #switch-signin:checked ~ #signin-form {
+        display: block;
+    }
+    #switch-signup:checked ~ #signup-form {
+        display: block;
+    }
+    #switch-signup:checked ~ #signin-form {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <input type="radio" id="switch-signin" name="form-switch" checked>
+    <label for="switch-signin">Sign In</label>
+    <input type="radio" id="switch-signup" name="form-switch">
+    <label for="switch-signup">Sign Up</label>
+    
+    <form id="signin-form" class="form-signin">
+        <div class="form-group">
+            <div style="text-align: center;">
+                <button style="background-color: blue; color: white; padding: 12px 24px; border: none; border-radius: 5px; margin-right: 10px; font-size: 24px;">f</button>
+                <button style="background-color: rgb(255, 100, 11); color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 24px;">G</button>
+            </div>
+            <label for="signin-email">Email</label>
+            <input type="text" id="signin-email" name="signin-email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="signin-password">Password</label>
+            <input type="password" id="signin-password" name="signin-password" required>
+        </div>
+        <input type="submit" value="Sign In">
+    </form>
+    
+    <form id="signup-form" class="form-signup">
+        <div class="form-group">
+            <label for="signup-name">Name</label>
+            <input type="text" id="signup-name" name="signup-name" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="text" id="signup-email" name="signup-email" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" name="signup-password" required>
+        </div>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+
+</body>
+</html>
